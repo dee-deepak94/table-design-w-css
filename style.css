@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  /* font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100; */
+}
+
+body {
+  background: url(/assets/background-image.jpg);
+
+  width: 100%;
+}
+
+.container {
+  background-color: rgba(212, 183, 220, 0.5);
+
+  width: 80%;
+  height: 90vh;
+  border: 2px solid gray;
+  margin: 30px auto;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+.customer-orders {
+  background-color: rgb(197, 184, 201);
+  border-radius: 15px 15px 0 0;
+  backdrop-filter: blur(10px);
+  margin: 0;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customer-orders h1 {
+  padding-left: 10px;
+}
+
+.customer-orders img {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+.customer-details {
+  background-color: #f7ecf0;
+
+  width: 95%;
+  border-radius: 16px;
+  overflow: hidden;
+  /* optional glass effect */
+  backdrop-filter: blur(10px);
+  margin-bottom: 20px;
+}
+
+.customer-details table {
+  width: 100%;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: rgba(161, 43, 43, 0.8);
+}
+
+.customer-details table tr:nth-child(odd) {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+th,
+td {
+  padding: 20px 25px;
+  /* text-align: center; */
+}
+
+tr {
+  text-align: center;
+}
+
+th {
+  font-weight: bold;
+}
+
+.user-image {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-start;
+  padding-left: 100px;
+  position: relative;
+  left: 15px;
+}
+
+.user-image img {
+  width: 30px;
+  border-radius: 50%;
+}
+
+.delivered {
+  background-color: #00c853;
+  color: white;
+}
+
+.cancelled {
+  background-color: #ef5350;
+  color: white;
+}
+
+.shipped {
+  background-color: #29b6f6;
+  color: white;
+}
+
+.pending {
+  background-color: yellow;
+}
+
+.amount {
+  font-weight: bold;
+  color: white;
+}
+/* .customer-details table tr:nth-child(odd) {background-color: #bcb0b0;} */
